@@ -17,18 +17,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
   // Do all of your work inside the document.addEventListener  
 
   // Part 1
-
+mainTitle = document.getElementById('main-title');
+mainTitle.textContent = 'Dom Toretto Homepage';
 
   // Part 2
+const body = document.querySelector('body');
+body.style.backgroundColor = ('teal');
 
 
   // Part 3
-
+favThings = document.getElementById('favorite-things');
+favThings.lastElementChild.remove('lastElementChild');
+console.log(favThings);
 
   // Part 4
-
+specialTitle = document.querySelectorAll('.special-title');
+console.log(specialTitle);
+specialTitle.forEach(title => {
+  title.style.fontSize = '2rem';
+});
 
   // Part 5
+pastRaces = document.getElementById('past-races');
+console.log(pastRaces);
+pastRaces.lastElementChild.previousElementChild.previousElementChild.remove();
 
 
   // Part 6
