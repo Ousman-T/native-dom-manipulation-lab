@@ -60,6 +60,7 @@ newarkPara.textContent = 'Welcome to Newark, the city of hemi engines and cataly
 console.log(newarkDiv);
 console.log(newarkHeader);
 console.log(newarkPara);
+body.appendChild
 
   // Part 8
 const quoteTitle = document.getElementById('quote-title');
@@ -68,7 +69,9 @@ quoteTitle.addEventListener('click', randomQuote);
   // Part 9
 const blogPost = document.querySelectorAll('.blog-post');
 console.log(blogPost);
-
+blogPost.forEach(div => {
+  div.addEventListener('mouseout', )
+})
 
 
 
