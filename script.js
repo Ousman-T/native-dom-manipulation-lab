@@ -50,17 +50,21 @@ console.log(li);
 pastRaces.appendChild(li);
   // Part 7
 const newarkDiv = document.createElement('div');
-newarkDiv.id = ('.blog-post');
-const newarkHeader = document.createElement('h2');
+newarkDiv.className = ('blog-post');
+const newarkHeader = document.createElement('h1');
 newarkHeader.textContent = 'Welcome to Newark';
-newarkHeader.id = ('.blog-post');
+
 const newarkPara = document.createElement('p');
-newarkPara.id = ('.blog-post');
+
 newarkPara.textContent = 'Welcome to Newark, the city of hemi engines and catalytic converter thiefs. Enjoy yourself, but be careful. ESPECIALLY when driving around in fancy cars!';
+newarkDiv.append(newarkHeader);
+newarkDiv.append(newarkPara);
 console.log(newarkDiv);
 console.log(newarkHeader);
 console.log(newarkPara);
-body.appendChild
+main = document.getElementsByClassName('main')[0];
+
+main.append(newarkDiv);
 
   // Part 8
 const quoteTitle = document.getElementById('quote-title');
@@ -70,9 +74,14 @@ quoteTitle.addEventListener('click', randomQuote);
 const blogPost = document.querySelectorAll('.blog-post');
 console.log(blogPost);
 blogPost.forEach(div => {
-  div.addEventListener('mouseout', )
+  div.addEventListener('mouseout', function(event){
+    event.target.classList.toggle('purple');
+  } )
+  div.addEventListener('mouseenter', function(event){
+    event.target.classList.toggle('red');
 })
 
 
 
 });
+})
